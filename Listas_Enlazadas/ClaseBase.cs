@@ -23,6 +23,13 @@ namespace Listas_Enlazadas
             set { _siguiente = value; }
         }
 
+        private ClaseBase _anterior;
+        public ClaseBase Anterior
+        {
+            get { return _anterior; }
+            set { _anterior = value; }
+        }
+
         public ClaseBase(int dato)
         {
             _dato = dato;

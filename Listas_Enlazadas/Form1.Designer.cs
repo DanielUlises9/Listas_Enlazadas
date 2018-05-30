@@ -36,6 +36,8 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEliminaUltimo = new System.Windows.Forms.Button();
             this.btnInvLista = new System.Windows.Forms.Button();
+            this.btnElimninardato = new System.Windows.Forms.Button();
+            this.lblRes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtDato
@@ -71,6 +73,7 @@
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnListar
             // 
@@ -84,17 +87,17 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(312, 32);
+            this.btnEliminar.Location = new System.Drawing.Point(312, 43);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(120, 35);
             this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Text = "EliminarPrimero";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEliminaUltimo
             // 
-            this.btnEliminaUltimo.Location = new System.Drawing.Point(312, 73);
+            this.btnEliminaUltimo.Location = new System.Drawing.Point(312, 84);
             this.btnEliminaUltimo.Name = "btnEliminaUltimo";
             this.btnEliminaUltimo.Size = new System.Drawing.Size(120, 35);
             this.btnEliminaUltimo.TabIndex = 6;
@@ -104,7 +107,7 @@
             // 
             // btnInvLista
             // 
-            this.btnInvLista.Location = new System.Drawing.Point(312, 114);
+            this.btnInvLista.Location = new System.Drawing.Point(312, 125);
             this.btnInvLista.Name = "btnInvLista";
             this.btnInvLista.Size = new System.Drawing.Size(120, 35);
             this.btnInvLista.TabIndex = 7;
@@ -112,11 +115,32 @@
             this.btnInvLista.UseVisualStyleBackColor = true;
             this.btnInvLista.Click += new System.EventHandler(this.btnInvLista_Click);
             // 
+            // btnElimninardato
+            // 
+            this.btnElimninardato.Location = new System.Drawing.Point(312, 2);
+            this.btnElimninardato.Name = "btnElimninardato";
+            this.btnElimninardato.Size = new System.Drawing.Size(120, 35);
+            this.btnElimninardato.TabIndex = 8;
+            this.btnElimninardato.Text = "Eliminar";
+            this.btnElimninardato.UseVisualStyleBackColor = true;
+            this.btnElimninardato.Click += new System.EventHandler(this.btnElimninardato_Click);
+            // 
+            // lblRes
+            // 
+            this.lblRes.AutoSize = true;
+            this.lblRes.Location = new System.Drawing.Point(40, 125);
+            this.lblRes.Name = "lblRes";
+            this.lblRes.Size = new System.Drawing.Size(35, 13);
+            this.lblRes.TabIndex = 9;
+            this.lblRes.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 343);
+            this.Controls.Add(this.lblRes);
+            this.Controls.Add(this.btnElimninardato);
             this.Controls.Add(this.btnInvLista);
             this.Controls.Add(this.btnEliminaUltimo);
             this.Controls.Add(this.btnEliminar);
@@ -142,6 +166,8 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEliminaUltimo;
         private System.Windows.Forms.Button btnInvLista;
+        private System.Windows.Forms.Button btnElimninardato;
+        private System.Windows.Forms.Label lblRes;
     }
 }
 

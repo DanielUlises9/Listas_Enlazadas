@@ -34,7 +34,7 @@ namespace Listas_Enlazadas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            catalogo.eliminar();
+            catalogo.eliminarInicio();
         }
 
         private void btnEliminaUltimo_Click(object sender, EventArgs e)
@@ -45,6 +45,16 @@ namespace Listas_Enlazadas
         private void btnInvLista_Click(object sender, EventArgs e)
         {
             catalogo.invertirlista();
+        }
+
+        private void btnElimninardato_Click(object sender, EventArgs e)
+        {
+            catalogo.Elimi(Convert.ToInt32(txtDato.Text));
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            lblRes.Text=Convert.ToString( catalogo.buscar (Convert.ToInt32(txtDato.Text)))+"encontrado";
         }
     }
 }
