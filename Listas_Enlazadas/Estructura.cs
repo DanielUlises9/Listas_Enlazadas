@@ -46,8 +46,11 @@ namespace Listas_Enlazadas
             }
         }*/
 
+            /// <summary>
             //agregar ordenado en doble
             //terminar los programas
+            /// </summary>
+            /// <param name="nuevo"></param>
         public void agregar(ClaseBase nuevo)
         {
             if (inicio == null)
@@ -79,7 +82,11 @@ namespace Listas_Enlazadas
 
         }
 
-
+        /// <summary>
+        /// Nueva funcion de listas enlazadas
+        /// </summary>
+        /// <param name="dato"></param>
+        /// <returns></returns>
         public int buscar(int dato)
         {
             ClaseBase temp = inicio;
@@ -93,7 +100,10 @@ namespace Listas_Enlazadas
             }
             return 0;
         }
-
+        /// <summary>
+        /// nueva funcion de listas enlazadas
+        /// </summary>
+        /// <param name="numero"></param>
         public void Elimi(int numero)
         {
             ClaseBase temp = inicio;
