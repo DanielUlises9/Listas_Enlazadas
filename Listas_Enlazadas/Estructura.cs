@@ -106,27 +106,35 @@ namespace Listas_Enlazadas
         /// <param name="numero"></param>
         public void Elimi(int numero)
         {
+            bool sup=true;
             ClaseBase temp = inicio;
-            while(true)
+            while(sup)
             {
                 if(temp.Dato == numero)
                 {
-                    if(temp.Siguiente !=null && temp.Anterior !=null)
+                    if (temp.Siguiente != null && temp.Anterior != null)
                     {
                         temp.Anterior.Siguiente = temp.Siguiente;
                         temp.Siguiente.Anterior = temp.Anterior;
                         break;
                     }
-                    else if(temp.Anterior != null)
+                    else if (temp.Anterior != null)
                     {
                         temp.Anterior.Siguiente = null;
                         break;
                     }
-                    else if(temp.Siguiente != null)
+                    else if (temp.Siguiente != null)
                     {
                         inicio = inicio.Siguiente;
                         break;
+                    }else
+                    {
+                        inicio = null;
+                        break;
                     }
+                }else if(temp.Siguiente == null)
+                {
+                    sup = false;
                 }
                 temp = temp.Siguiente;
             }
